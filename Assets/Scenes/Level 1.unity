@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 28327478}
-  fowardForce: 3500
+  fowardForce: 3800
   sideWayForce: 60
 --- !u!114 &28327480
 MonoBehaviour:
@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 28327477}
-  offset: {x: 0, y: 1, z: -5}
+  offset: {x: 0, y: 1, z: -3}
 --- !u!4 &534899685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7327563631788894764, guid: 0c77b26922bcb13438801e7f0570425d,
