@@ -28,6 +28,11 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(-sideWayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+
+        if (transform.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
 

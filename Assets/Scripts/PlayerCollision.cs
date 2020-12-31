@@ -12,7 +12,11 @@ public class PlayerCollision : MonoBehaviour
         
         if (collision.collider.tag == "Obstacle")
         {
-            movement.enabled = false;
+            // para usar alguno de estos 2 deben estar los elementos referenciados en la escena.
+
+            movement.enabled = false; // Se puede escribir  como GetComponent<playerMovement>(); sin necesidad de la variable publica de arriva.
+            FindObjectOfType<GameManager>().EndGame(); // mismo pero para el Script
+
             Instantiate(destructible, transform.position,transform.rotation);
             Destroy(gameObject);
         }
