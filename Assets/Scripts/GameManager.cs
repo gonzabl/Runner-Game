@@ -19,11 +19,11 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Se le pasas como parametro la escena o nivel actual que esta cargado
     }
 
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
+        completeLevelUI.SetActive(true); // activa nuevamente el objecto con la interfaz de nivel completado
     }
 }
